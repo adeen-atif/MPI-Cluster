@@ -1,9 +1,9 @@
 # MPI-Cluster
-##Making an MPI Cluster using two PCS, one master, and the other slave, on the same LAN
+## Making an MPI Cluster using two PCS, one master, and the other slave, on the same LAN
 
 
 
-###Configuration for the Master PC 
+### Configuration for the Master PC 
 Make sure you’re logged in on your Ubuntu system using an ID which has sudo access
 
 Open terminal
