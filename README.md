@@ -1,5 +1,5 @@
 # MPI-Cluster
-## Making an MPI Cluster using two PCS, one master, and the other slave, on the same LAN
+## Making an MPI Cluster using two computers on the same LAN
 
 
 
@@ -69,7 +69,7 @@ ssh-copy-id yourmasterusername@slave-ip-address
 
 Test the SSH connection to the slave computer:
 ```
-ssh yourmasterusername@slave-ip-address
+ssh your-master-username@slave-ip-address
 ```
 
 It should be able to log in to the terminal of the slave PC
@@ -99,6 +99,9 @@ Compile the mpi program's file
 mpicc mpihelloworld.c -o mpi_hello_world
 ```
 
+Ensure the program is saved in the same directory on the slave PC. 
+Also ensure that it has been compiled on the slave PC.
+
 Now finally execute the file on your master computer
 
 ```
@@ -107,7 +110,7 @@ mpiexec --oversubscribe -n 20 -host <master-ip-address>,<slave-ip-address> ./<th
 
 In our case: mpiexec --oversubscribe -n 20 -host 10.2.70.156,10.2.70.78 ./mpi_hello_world
 
-VOILA IT IS WORKING!
+🎉 VOILA IT IS WORKING!
 
 
 
@@ -125,31 +128,89 @@ VOILA IT IS WORKING!
 
 # Slave PC
 Open terminal
-sudo adduser mpiuser
 
-Gives sudo access to the newly created user
+Make a new user
+```
+sudo adduser mpiuser
+```
+
+
+Give sudo access to the newly created user
+```
 sudo usermod -aG sudo mpiuser
+```
+
+To execute commands with the priveleges of the newly created user
+```
 su mpiuser
+```
+
+
+Install OpemMPI
+```
 sudo apt-get install openmpi-bin
+```
+
+
+Install SSH 
+```
 sudo apt-get install openssh-server
-Get your IP address using ifconfig
+```
+
+
+Get your IP address 
+```
+ifconfig
+```
+
+Add the IP addresses of master and slave PCs to the host file
+```
 sudo nano /etc/hosts
+```
+
+```
 Master <master up address> 
 Slave <slave ip address>
-Ctrl+o               enter                  Ctrl+x
+```
 
-Test the SSH connection to the master computer:
-ssh yourusername@master-ip-address
+After you're done writing them, use the following keyboard shortcuts to properly write to and exit the file
+"Ctrl+o               enter                  Ctrl+x"
 
-Now exit from being logged into the master pc:
+
+Ensure the Master PC has done generating a key and copying it onto your PC
+
+Test the SSH connection to the master computer
+```
+ssh your-slave-username@master-ip-address
+```
+
+It should be able to log in to the terminal of the master PC
+
+Now exit from being logged into the master pc
+```
 exit
-Okay now switch users and login to the mpiuser you created (It will be saved as the name you chose)
-Write an mpi program (hello world in this case) and save the file with the same name and in the same directory for both the computers (I will be putting it in Documents)
+```
+
+Now switch users and login to the mpiuser you created (It will be saved as the First Name you chose)
+
+
+Write an mpi program (hello world in this case) and save the file with the same name and in the same directory for both the PCs (I will be putting it in Documents)
 Our program (cited from: https://mpitutorial.com/tutorials/mpi-hello-world/ ):
 
+Open the terminal
 
+
+Change the directory to the place where you saved your mpi program's file (Documents in our case)
+```
 cd Documents
+```
+
+Compile the mpi program's file
+```
 mpicc mpihelloworld.c -o mpi_hello_world
+```
+
+Go check with your master PC and see if the program is executing as expected (fingers crossed it is 🤞)
 
 
 
