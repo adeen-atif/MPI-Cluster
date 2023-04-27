@@ -4,7 +4,7 @@
 
 
 # Master Computer 
-Make sure you’re logged in on your Ubuntu system using an ID which has sudo access 
+Make sure you’re logged in on your Ubuntu system using a user which has sudo access 
 
 Open the terminal
 
@@ -54,7 +54,7 @@ Slave <slave ip address>
 ```
 
 After you're done writing them, use the following keyboard shortcuts to properly write to and exit the file
-"Ctrl+o               enter                  Ctrl+x"
+"CTRL+O               ENTER                  CTRL+X"
 
 ![My Image](1.png)
 
@@ -134,7 +134,7 @@ In our case: mpiexec --oversubscribe -n 20 -host 10.2.70.156,10.2.70.78 ./mpi_he
 
 
 # Slave Computer
-Make sure you’re logged in on your Ubuntu system using an ID which has sudo access 
+Make sure you’re logged in on your Ubuntu system using a user which has sudo access 
 
 
 
@@ -188,7 +188,7 @@ Slave <slave ip address>
 ```
 
 After you're done writing them, use the following keyboard shortcuts to properly write to and exit the file
-"Ctrl+o               enter                  Ctrl+x"
+"CTRL+O               ENTER                  CTRL+X"
 ![My Image](1.png)
 
 
@@ -246,10 +246,10 @@ sudo apt-get autoremove
 sudo apt-get install libopenmpi-dev openmpi-bin
 ```
 
-#### If you get an error regarding some magic cookie 
+#### If you get an error regarding some magic cookie:
 Ignore it. It's not an error.
 
-#### If you get an error with something along the lines "mpiexec was unable to launch the specified application as it could not accessor execute an executable"
+#### If you get an error with something along the lines "mpiexec was unable to launch the specified application as it could not accessor execute an executable":
 You have either:
   * not created the mpi program in the same directories for both the PCs
   * not compiled the program (the mpicc command) on either the master or the slave PC
