@@ -231,7 +231,6 @@ sudo apt-get autoremove
 ```
 ```
 sudo apt-get install libopenmpi-dev openmpi-bin
-
 ```
 
 ### If you get an error regarding some magic cookie 
