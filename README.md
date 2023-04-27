@@ -76,6 +76,8 @@ ssh your-master-username@slave-ip-address
 ```
 
 It should be able to log in to the terminal of the slave PC
+![My Image](2.png)
+
 
 Now exit from being logged into the slave pc
 ```
@@ -101,6 +103,7 @@ Compile the mpi program's file
 ```
 mpicc mpihelloworld.c -o mpi_hello_world
 ```
+![My Image](3.png)
 
 ⚠️ Ensure the program is saved in the same directory on the slave PC. 
 ⚠️ Ensure the program has been compiled on the slave PC.
@@ -114,6 +117,8 @@ mpiexec --oversubscribe -n 20 -host <master-ip-address>,<slave-ip-address> ./<th
 In our case: mpiexec --oversubscribe -n 20 -host 10.2.70.156,10.2.70.78 ./mpi_hello_world
 
 <br>
+![My Image](4.png)
+
 
 ### 🎉 TADA IT IS WORKING!
 
@@ -186,6 +191,8 @@ Slave <slave ip address>
 
 After you're done writing them, use the following keyboard shortcuts to properly write to and exit the file
 "Ctrl+o               enter                  Ctrl+x"
+![My Image](1.png)
+
 
 
 ⚠️ Ensure the Master PC is done generating a key and copying it onto your PC
@@ -196,6 +203,8 @@ ssh your-slave-username@master-ip-address
 ```
 
 It should be able to log in to the terminal of the master PC
+![My Image](2.png)
+
 
 Now exit from being logged into the master pc
 ```
@@ -220,6 +229,8 @@ Compile the mpi program's file
 ```
 mpicc mpihelloworld.c -o mpi_hello_world
 ```
+![My Image](3.png)
+
 
 Go check with your master PC and see if the program is executing as expected (fingers crossed it is 🤞)
 
