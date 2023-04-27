@@ -239,8 +239,7 @@ Ignore it. It's not an error.
 ### If you get an error with something along the lines "mpiexec was unable to launch the specified application as it could not accessor execute an executable"
 You have either:
   * not created the mpi program in the same directories for both the PCs
-  OR
-  * not compiled the program on either the master or the slave PC
+  * not compiled the program (the mpicc command) on either the master or the slave PC
   
 
 
