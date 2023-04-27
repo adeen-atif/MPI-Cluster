@@ -110,10 +110,13 @@ mpiexec --oversubscribe -n 20 -host <master-ip-address>,<slave-ip-address> ./<th
 
 In our case: mpiexec --oversubscribe -n 20 -host 10.2.70.156,10.2.70.78 ./mpi_hello_world
 
+<br>
+
 🎉 VOILA IT IS WORKING!
 
 
-
+<br>
+<br>
 
 
 
