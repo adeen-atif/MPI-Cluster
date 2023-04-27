@@ -99,7 +99,7 @@ mpicc mpihelloworld.c -o mpi_hello_world
 ```
 
 ⚠️ Ensure the program is saved in the same directory on the slave PC. 
-Also ensure that it has been compiled on the slave PC.
+⚠️ Ensure the program has been compiled on the slave PC.
 
 Now finally execute the file on your master computer
 
@@ -183,7 +183,7 @@ After you're done writing them, use the following keyboard shortcuts to properly
 "Ctrl+o               enter                  Ctrl+x"
 
 
-Ensure the Master PC is done generating a key and copying it onto your PC
+⚠️ Ensure the Master PC is done generating a key and copying it onto your PC
 
 Test the SSH connection to the master computer
 ```
