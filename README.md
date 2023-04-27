@@ -56,6 +56,9 @@ Slave <slave ip address>
 After you're done writing them, use the following keyboard shortcuts to properly write to and exit the file
 "Ctrl+o               enter                  Ctrl+x"
 
+![My Image](1.png)
+
+
 
 Generate a key (When prompted DO NOT enter any passphrase)
 ```
