@@ -1,4 +1,4 @@
-# Making an MPI Cluster using two computers on the same LAN
+# Making an MPI Cluster within a LAN
 
 
 
