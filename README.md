@@ -1,15 +1,13 @@
 # MPI-Cluster
-Making an MPI Cluster using 2 slave PCS connected to a master on the same LAN
+##Making an MPI Cluster using two PCS, one master, and the other slave, on the same LAN
 
 
-MPI Cluster Configuration
-Adeen Atif
 
-Master
-Make sure you’re logged in on your Ubuntu system using the admin ID (which has sudo access)
+###Configuration for the Master PC 
+Make sure you’re logged in on your Ubuntu system using an ID which has sudo access
 
 Open terminal
-sudo adduser mpiuser
+'''sudo adduser mpiuser'''
 
 Gives sudo access to the newly created user
 sudo usermod -aG sudo mpiuser
