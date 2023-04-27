@@ -83,8 +83,8 @@ exit
 Now switch users and login to the mpiuser you created (It will be saved as the First Name you chose)
 
 
-Write an mpi program (hello world in this case) and save the file with the same name and in the same directory for both the PCs (I will be putting it in Documents)
-Our program (cited from: https://mpitutorial.com/tutorials/mpi-hello-world/ ):
+Write an mpi program (hello world in this case) and save the file with the same name and in the same directory for both the PCs (I will be putting it in Documents).
+Our program was taken from: https://mpitutorial.com/tutorials/mpi-hello-world/
 
 Open the terminal
 
@@ -114,8 +114,6 @@ In our case: mpiexec --oversubscribe -n 20 -host 10.2.70.156,10.2.70.78 ./mpi_he
 
 ### 🎉 TADA IT IS WORKING!
 
-
-<br>
 <br>
 
 
@@ -204,8 +202,8 @@ exit
 Now switch users and login to the mpiuser you created (It will be saved as the First Name you chose)
 
 
-Write an mpi program (hello world in this case) and save the file with the same name and in the same directory for both the PCs (I will be putting it in Documents)
-Our program (cited from: https://mpitutorial.com/tutorials/mpi-hello-world/ ):
+Write an mpi program (hello world in this case) and save the file with the same name and in the same directory for both the PCs (I will be putting it in Documents).
+Our program was taken from: https://mpitutorial.com/tutorials/mpi-hello-world/
 
 Open the terminal
 
