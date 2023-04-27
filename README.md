@@ -1,7 +1,4 @@
 # Making an MPI Cluster within a LAN
-Collaborator: @maazbinadnan
-<br>
-
 ⚠️ There are 2 seperate configuration sections for the Master and Slave PC in this guide (utilize accordingly)
 
 
@@ -257,7 +254,7 @@ You have either:
   * not created the mpi program in the same directories for both the PCs
   * not compiled the program (the mpicc command) on either the master or the slave PC
   
-
+#### Collaborator: @maazbinadnan
 
 
 
