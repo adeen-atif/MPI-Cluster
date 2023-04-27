@@ -7,7 +7,7 @@
 Make sure you’re logged in on your Ubuntu system using an ID which has sudo access
 
 Open terminal
-'''sudo adduser mpiuser'''
+''' sudo adduser mpiuser '''
 
 Gives sudo access to the newly created user
 sudo usermod -aG sudo mpiuser
