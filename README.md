@@ -4,9 +4,9 @@
 
 
 # Master PC 
-Make sure you’re logged in on your Ubuntu system using an ID which has sudo access
+> Make sure you’re logged in on your Ubuntu system using an ID which has sudo access
 
-Open the terminal
+> Open the terminal
 
 
 Create a new user called 'mpiuser'
@@ -99,7 +99,7 @@ Compile the mpi program's file
 mpicc mpihelloworld.c -o mpi_hello_world
 ```
 
-Ensure the program is saved in the same directory on the slave PC. 
+⚠️ Ensure the program is saved in the same directory on the slave PC. 
 Also ensure that it has been compiled on the slave PC.
 
 Now finally execute the file on your master computer
