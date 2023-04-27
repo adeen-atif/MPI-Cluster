@@ -253,8 +253,8 @@ Ignore it. It's not an error.
 You have either:
   * not created the mpi program in the same directories for both the PCs
   * not compiled the program (the mpicc command) on either the master or the slave PC
-  
-#### Collaborator: @maazbinadnan
+<br>
+#### Collaborator: Maaz Bin Adnan
 
 
 
