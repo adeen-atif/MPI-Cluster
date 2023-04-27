@@ -1,9 +1,8 @@
-# MPI-Cluster
-## Making an MPI Cluster using two computers on the same LAN
+# Making an MPI Cluster using two computers on the same LAN
 
 
 
-# Master PC 
+# Master Computer 
 Make sure you’re logged in on your Ubuntu system using an ID which has sudo access 
 
 Open the terminal
@@ -126,7 +125,14 @@ In our case: mpiexec --oversubscribe -n 20 -host 10.2.70.156,10.2.70.78 ./mpi_he
 
 
 
-# Slave PC
+# Slave Computer
+Make sure you’re logged in on your Ubuntu system using an ID which has sudo access 
+
+
+
+
+
+
 Open terminal
 
 Make a new user
