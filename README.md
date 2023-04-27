@@ -183,7 +183,7 @@ After you're done writing them, use the following keyboard shortcuts to properly
 "Ctrl+o               enter                  Ctrl+x"
 
 
-Ensure the Master PC has done generating a key and copying it onto your PC
+Ensure the Master PC is done generating a key and copying it onto your PC
 
 Test the SSH connection to the master computer
 ```
@@ -217,6 +217,21 @@ mpicc mpihelloworld.c -o mpi_hello_world
 ```
 
 Go check with your master PC and see if the program is executing as expected (fingers crossed it is 🤞)
+
+
+
+## Potential Error
+If you get an error along the lines 'can not find the mpi.h file' while compiling or executing your mpi program. Try running these commands:
+```
+sudo apt-get remove libopenmpi-dev openmpi-bin
+```
+```
+sudo apt-get autoremove
+```
+```
+sudo apt-get install libopenmpi-dev openmpi-bin
+
+```
 
 
 
