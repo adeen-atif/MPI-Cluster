@@ -26,7 +26,7 @@ su mpiuser
 ```
 
 
-Install OpemMPI
+Install OpenMPI
 ```
 sudo apt-get install openmpi-bin
 ```
@@ -146,7 +146,7 @@ su mpiuser
 ```
 
 
-Install OpemMPI
+Install OpenMPI
 ```
 sudo apt-get install openmpi-bin
 ```
