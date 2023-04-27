@@ -1,5 +1,5 @@
 # Making an MPI Cluster within a LAN
-#### Collaborator: @maazbinadnan
+Collaborator: @maazbinadnan
 <br>
 
 ⚠️ There are 2 seperate configuration sections for the Master and Slave PC in this guide (utilize accordingly)
