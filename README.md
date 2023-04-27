@@ -3,7 +3,7 @@
 
 
 
-### Configuration for the Master PC 
+# Master PC 
 Make sure you’re logged in on your Ubuntu system using an ID which has sudo access
 
 Open the terminal
@@ -123,7 +123,7 @@ VOILA IT IS WORKING!
 
 
 
-Slave
+# Slave PC
 Open terminal
 sudo adduser mpiuser
 
