@@ -4,9 +4,9 @@
 
 
 # Master PC 
-> Make sure you’re logged in on your Ubuntu system using an ID which has sudo access
+<sub> Make sure you’re logged in on your Ubuntu system using an ID which has sudo access <sub/>
 
-> Open the terminal
+Open the terminal
 
 
 Create a new user called 'mpiuser'
