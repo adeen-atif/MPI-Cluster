@@ -4,7 +4,7 @@
 
 
 # Master PC 
-<sub> Make sure you’re logged in on your Ubuntu system using an ID which has sudo access <sub/>
+<sup> Make sure you’re logged in on your Ubuntu system using an ID which has sudo access <sup/>
 
 Open the terminal
 
