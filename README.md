@@ -254,6 +254,7 @@ You have either:
   * not created the mpi program in the same directories for both the PCs
   * not compiled the program (the mpicc command) on either the master or the slave PC
 <br>
+
 #### Collaborator: Maaz Bin Adnan
 
 
