@@ -102,7 +102,7 @@ mpicc mpihelloworld.c -o mpi_hello_world
 Now finally execute the file on your master computer
 
 ```
-mpiexec -n 20 -host <master-ip-address>,<slave-ip-address> ./<the executable mpi file’s name>
+mpiexec -n 20 -host <ip-address>,<ip-address> ./<the executable mpi file’s name>
 ```
 
 In our case: mpiexec -n 20 -host 10.2.70.156,10.2.70.78 ./mpi_hello_world
