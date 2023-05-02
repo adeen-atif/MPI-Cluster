@@ -4,7 +4,6 @@
 
 
 # Master Computer 
-Make sure you’re logged in on your Ubuntu system using a user which has sudo access 
 
 Open the terminal
 
@@ -18,11 +17,6 @@ sudo adduser mpiuser
 Give sudo access to the newly created user
 ```
 sudo usermod -aG sudo mpiuser
-```
-
-To execute commands with the priveleges of the newly created user
-```
-su mpiuser
 ```
 
 
@@ -53,26 +47,23 @@ Master <master up address>
 Slave <slave ip address>
 ```
 
-After you're done writing them, use the following keyboard shortcuts to properly write to and exit the file
-"CTRL+O               ENTER                  CTRL+X"
-
 ![My Image](1.png)
 
 
 
-Generate a key (When prompted DO NOT enter any passphrase)
+Generate a key
 ```
 ssh-keygen
 ```
 
 Copy the generated key onto the slave PC (make sure to replace the prompts below with your own ip addresses)
 ```
-ssh-copy-id yourmasterusername@slave-ip-address
+ssh-copy-id username@ip-address
 ```
 
 Test the SSH connection to the slave computer:
 ```
-ssh your-master-username@slave-ip-address
+ssh username@ip-address
 ```
 
 It should be able to log in to the terminal of the slave PC
@@ -111,10 +102,10 @@ mpicc mpihelloworld.c -o mpi_hello_world
 Now finally execute the file on your master computer
 
 ```
-mpiexec --oversubscribe -n 20 -host <master-ip-address>,<slave-ip-address> ./<the executable mpi file’s name>
+mpiexec -n 20 -host <master-ip-address>,<slave-ip-address> ./<the executable mpi file’s name>
 ```
 
-In our case: mpiexec --oversubscribe -n 20 -host 10.2.70.156,10.2.70.78 ./mpi_hello_world
+In our case: mpiexec -n 20 -host 10.2.70.156,10.2.70.78 ./mpi_hello_world
 ![My Image](4.png)
 
 
@@ -187,8 +178,6 @@ Master <master up address>
 Slave <slave ip address>
 ```
 
-After you're done writing them, use the following keyboard shortcuts to properly write to and exit the file
-"CTRL+O               ENTER                  CTRL+X"
 ![My Image](1.png)
 
 
@@ -197,7 +186,7 @@ After you're done writing them, use the following keyboard shortcuts to properly
 
 Test the SSH connection to the master computer
 ```
-ssh your-slave-username@master-ip-address
+ssh username@ip-address
 ```
 
 It should be able to log in to the terminal of the master PC
