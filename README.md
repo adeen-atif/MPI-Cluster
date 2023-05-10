@@ -234,6 +234,29 @@ Go check with your master PC and see if the program is executing as expected (fi
 
 <br>
 
+
+## Potential Errors
+#### If you get an error along the lines of 'can not find the mpi.h file' while compiling or executing your mpi program. Try running these commands:
+
+sudo apt-get remove libopenmpi-dev openmpi-bin
+
+
+sudo apt-get autoremove
+
+
+sudo apt-get install libopenmpi-dev openmpi-bin
+
+
+#### If you get an error regarding some magic cookie:
+Ignore it. It's not an error.
+
+#### If you get an error with something along the lines of "mpiexec was unable to launch the specified application as it could not accessor execute an executable":
+You have either:
+  * not created the mpi program in the same directories for both the PCs
+  * not compiled the program (the mpicc command) on either the master or the slave PC
+<br>
+
+
 #### Collaborator: Maaz Bin Adnan
 
 
