@@ -238,6 +238,7 @@ Go check with your master PC and see if the program is executing as expected (fi
 ## Potential Errors
 #### If you get an error along the lines of 'can not find the mpi.h file' while compiling or executing your mpi program. Try running these commands:
 
+```
 sudo apt-get remove libopenmpi-dev openmpi-bin
 
 
@@ -245,6 +246,7 @@ sudo apt-get autoremove
 
 
 sudo apt-get install libopenmpi-dev openmpi-bin
+```
 
 
 #### If you get an error regarding some magic cookie:
